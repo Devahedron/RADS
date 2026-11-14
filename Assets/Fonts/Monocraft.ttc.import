@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://0bsury2f4l3p"
-path="res://.godot/imported/Monocraft.ttc-a7fbbf03d406971c089707b6ee80366d.fontdata"
+path="res://.godot/imported/Monocraft.ttc-4032c2620318c8cdf10f9a6a4280c98f.fontdata"
 
 [deps]
 
-source_file="res://Assets/Monocraft.ttc"
-dest_files=["res://.godot/imported/Monocraft.ttc-a7fbbf03d406971c089707b6ee80366d.fontdata"]
+source_file="res://Assets/Fonts/Monocraft.ttc"
+dest_files=["res://.godot/imported/Monocraft.ttc-4032c2620318c8cdf10f9a6a4280c98f.fontdata"]
 
 [params]
 

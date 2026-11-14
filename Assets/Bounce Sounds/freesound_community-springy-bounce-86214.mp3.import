@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bc8bvcyqwnh78"
+path="res://.godot/imported/freesound_community-springy-bounce-86214.mp3-b626a046851e170e6dba523a99628113.mp3str"
+
+[deps]
+
+source_file="res://Assets/Bounce Sounds/freesound_community-springy-bounce-86214.mp3"
+dest_files=["res://.godot/imported/freesound_community-springy-bounce-86214.mp3-b626a046851e170e6dba523a99628113.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
