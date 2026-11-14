@@ -3,36 +3,18 @@
 [ext_resource type="Texture2D" uid="uid://chdla5ce420il" path="res://Assets/Sprites-Tilemaps/factory_ [version 1.0]/factory_ [version 1.0]/factory_.png" id="1_nxlw5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vfnvt"]
-size = Vector2(32, 32)
+size = Vector2(48, 9)
 
 [node name="platform2" type="Node2D" unique_id=1576888644]
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=1296793518]
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=59423764]
+position = Vector2(4, 12)
+shape = SubResource("RectangleShape2D_vfnvt")
+
 [node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D" unique_id=989469103]
 position = Vector2(4, 12)
 texture = ExtResource("1_nxlw5")
 region_enabled = true
-region_rect = Rect2(64, 64, 16, 16)
-
-[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D/Sprite2D" unique_id=1128795423]
-position = Vector2(-16, 0)
-texture = ExtResource("1_nxlw5")
-region_enabled = true
-region_rect = Rect2(64, 64, 16, 16)
-
-[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D/Sprite2D/Sprite2D" unique_id=1655429191]
-position = Vector2(0, 16)
-texture = ExtResource("1_nxlw5")
-region_enabled = true
-region_rect = Rect2(64, 64, 16, 16)
-
-[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D/Sprite2D/Sprite2D/Sprite2D" unique_id=1923908447]
-position = Vector2(16, 0)
-texture = ExtResource("1_nxlw5")
-region_enabled = true
-region_rect = Rect2(64, 64, 16, 16)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=59423764]
-position = Vector2(-4, 20)
-shape = SubResource("RectangleShape2D_vfnvt")
+region_rect = Rect2(112, 80, 48, 9)
