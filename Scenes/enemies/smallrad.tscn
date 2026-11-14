@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://dlodvcq4n3wtw"]
+
+[ext_resource type="Texture2D" uid="uid://bfj32fpsvbn5l" path="res://Assets/Used Assets/Prop_05.png" id="1_1hotg"]
+[ext_resource type="PackedScene" uid="uid://du6o5c5f71dto" path="res://Scenes/killzone.tscn" id="1_hghv2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2mnih"]
+atlas = ExtResource("1_1hotg")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_meums"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2mnih")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dsral"]
+size = Vector2(8, 11)
+
+[node name="Spike" type="Node2D" unique_id=2038571557]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=217524847]
+sprite_frames = SubResource("SpriteFrames_meums")
+
+[node name="killzone" parent="." unique_id=607056403 instance=ExtResource("1_hghv2")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killzone" unique_id=1397192480]
+position = Vector2(0, 2.5)
+shape = SubResource("RectangleShape2D_dsral")
