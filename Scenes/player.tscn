@@ -299,3 +299,10 @@ frame_progress = 0.36609077
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=89829517]
 position = Vector2(0, 7)
 shape = SubResource("CircleShape2D_vfnvt")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=269578923]
+position = Vector2(-3, 6)
+zoom = Vector2(4, 4)
+limit_bottom = 470
+limit_smoothed = true
+position_smoothing_enabled = true
