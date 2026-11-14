@@ -4,6 +4,8 @@ extends CharacterBody2D
 const SPEED = 120.0
 const JUMP_VELOCITY = -300.0
 const jump_pad_height: float = -535.0
+const health: int = 100
+const radiation_damage: int = 10
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
