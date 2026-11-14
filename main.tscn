@@ -3,7 +3,7 @@
 [node name="Node" type="Node" unique_id=897390478]
 
 [node name="Label" type="Label" parent="." unique_id=2111595438]
-modulate = Color(0.32825187, 0.9842356, 0.99999994, 1)
+modulate = Color(0.9820824, 0.8099972, 1, 1)
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
