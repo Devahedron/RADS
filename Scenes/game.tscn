@@ -196,12 +196,12 @@ sources/0 = SubResource("TileSetAtlasSource_wrm1d")
 [node name="Game" type="Node2D" unique_id=436735830]
 
 [node name="Player" parent="." unique_id=1134748994 instance=ExtResource("1_ebmjs")]
-position = Vector2(1, -12)
+position = Vector2(1, -14)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1029781260]
 zoom = Vector2(4, 4)
 
-[node name="Layer1" type="TileMapLayer" parent="." unique_id=320409008]
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=320409008]
 use_parent_material = true
 tile_map_data = PackedByteArray("AAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAAD+/wAAAAAAAAAAAAD//wEAAAAAAAEAAAAAAAEAAAAAAAEAAAABAAEAAAAAAAEAAAACAAEAAAAAAAEAAAACAAIAAAAAAAEAAAABAAIAAAAAAAEAAAAAAAIAAAAAAAEAAAD//wIAAAAAAAEAAAD+/wIAAAAAAAEAAAD+/wEAAAAAAAEAAAA=")
 tile_set = SubResource("TileSet_vfnvt")
