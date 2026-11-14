@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkqeyqwoslaps"
-path="res://.godot/imported/knight.png-1438adb88511585191a11dbd3e40e6ed.ctex"
+uid="uid://8oiu1cdbgul8"
+path="res://.godot/imported/slime_purple.png-ba3f64ab05a179ce2adb7eb6759591b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://brackeys_platformer_assets/sprites/knight.png"
-dest_files=["res://.godot/imported/knight.png-1438adb88511585191a11dbd3e40e6ed.ctex"]
+source_file="res://Assets/brackeys_platformer_assets/sprites/slime_purple.png"
+dest_files=["res://.godot/imported/slime_purple.png-ba3f64ab05a179ce2adb7eb6759591b5.ctex"]
 
 [params]
 
