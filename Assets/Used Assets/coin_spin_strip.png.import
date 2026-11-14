@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bimwgftrnyicx"
-path="res://.godot/imported/crumble_platform_break_strip.png-3941343dd4bb622175e6e94e6897d2ed.ctex"
+uid="uid://d0gdd4bca0egp"
+path="res://.godot/imported/coin_spin_strip.png-ec3ccc9256cb148b2aaa4747ded25c09.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites-Tilemaps/side-scroller-traps-lite/sprites/crumble_platform_break_strip.png"
-dest_files=["res://.godot/imported/crumble_platform_break_strip.png-3941343dd4bb622175e6e94e6897d2ed.ctex"]
+source_file="res://Assets/Used Assets/coin_spin_strip.png"
+dest_files=["res://.godot/imported/coin_spin_strip.png-ec3ccc9256cb148b2aaa4747ded25c09.ctex"]
 
 [params]
 

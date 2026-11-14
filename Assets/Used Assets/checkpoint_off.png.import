@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0i52b8ag1kn7"
-path="res://.godot/imported/checkpoint_raise_strip.png-94b65e9ac6bd21f78beb30ddc3120bf1.ctex"
+uid="uid://bt4uukjvpi2fv"
+path="res://.godot/imported/checkpoint_off.png-486ce29955a3de8ee8cd9daa85aedbb1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites-Tilemaps/side-scroller-traps-lite/sprites/checkpoint_raise_strip.png"
-dest_files=["res://.godot/imported/checkpoint_raise_strip.png-94b65e9ac6bd21f78beb30ddc3120bf1.ctex"]
+source_file="res://Assets/Used Assets/checkpoint_off.png"
+dest_files=["res://.godot/imported/checkpoint_off.png-486ce29955a3de8ee8cd9daa85aedbb1.ctex"]
 
 [params]
 

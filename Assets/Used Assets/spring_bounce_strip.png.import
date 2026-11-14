@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3ldd7hhvady5"
-path="res://.godot/imported/rail_h.png-329c62474742b80efe2cbc1c56e231d9.ctex"
+uid="uid://c34h2xx4e0jc2"
+path="res://.godot/imported/spring_bounce_strip.png-522717849a91ba89d5cf330db3b6502e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites-Tilemaps/side-scroller-traps-lite/sprites/rail_h.png"
-dest_files=["res://.godot/imported/rail_h.png-329c62474742b80efe2cbc1c56e231d9.ctex"]
+source_file="res://Assets/Used Assets/spring_bounce_strip.png"
+dest_files=["res://.godot/imported/spring_bounce_strip.png-522717849a91ba89d5cf330db3b6502e.ctex"]
 
 [params]
 

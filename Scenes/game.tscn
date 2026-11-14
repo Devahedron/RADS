@@ -194,12 +194,14 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_wrm1d")
 
 [node name="Game" type="Node2D" unique_id=436735830]
+position = Vector2(-1, 0)
 
 [node name="Player" parent="." unique_id=1134748994 instance=ExtResource("1_ebmjs")]
 position = Vector2(1, -14)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1029781260]
 zoom = Vector2(4, 4)
+position_smoothing_enabled = true
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=320409008]
 use_parent_material = true

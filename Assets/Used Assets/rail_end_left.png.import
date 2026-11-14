@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bil8k1wpwv4js"
-path="res://.godot/imported/saw_16_strip.png-a723200a3ee77fd778aea1250def8dbd.ctex"
+uid="uid://jirotj0r5mgh"
+path="res://.godot/imported/rail_end_left.png-6e961de73812108085262dc054bfc1f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites-Tilemaps/side-scroller-traps-lite/sprites/saw_16_strip.png"
-dest_files=["res://.godot/imported/saw_16_strip.png-a723200a3ee77fd778aea1250def8dbd.ctex"]
+source_file="res://Assets/Used Assets/rail_end_left.png"
+dest_files=["res://.godot/imported/rail_end_left.png-6e961de73812108085262dc054bfc1f9.ctex"]
 
 [params]
 

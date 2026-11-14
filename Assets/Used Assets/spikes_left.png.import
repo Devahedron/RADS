@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0gdd4bca0egp"
-path="res://.godot/imported/coin_spin_strip.png-269d1dcae1aff3a357345eee9c47fe2d.ctex"
+uid="uid://bmh6pqcn4y0vl"
+path="res://.godot/imported/spikes_left.png-50a4cdde37026ed7eaa374b79c0ade77.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites-Tilemaps/side-scroller-traps-lite/sprites/coin_spin_strip.png"
-dest_files=["res://.godot/imported/coin_spin_strip.png-269d1dcae1aff3a357345eee9c47fe2d.ctex"]
+source_file="res://Assets/Used Assets/spikes_left.png"
+dest_files=["res://.godot/imported/spikes_left.png-50a4cdde37026ed7eaa374b79c0ade77.ctex"]
 
 [params]
 
