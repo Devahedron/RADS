@@ -21,7 +21,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dsral"]
 size = Vector2(14, 16)
 
-[node name="Spike" type="Node2D" unique_id=2038571557]
+[node name="Node2D" type="Node2D" unique_id=2038571557]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=217524847]
 sprite_frames = SubResource("SpriteFrames_meums")
