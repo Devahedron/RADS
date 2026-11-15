@@ -27,6 +27,7 @@ size = Vector2(14, 16)
 sprite_frames = SubResource("SpriteFrames_meums")
 
 [node name="killzone" parent="." unique_id=607056403 instance=ExtResource("2_u4jga")]
+collision_mask = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone" unique_id=1397192480]
 shape = SubResource("RectangleShape2D_dsral")
