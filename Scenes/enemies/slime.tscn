@@ -53,6 +53,7 @@ frame_progress = 0.70853645
 
 [node name="killzone" parent="AnimatedSprite2D" unique_id=607056403 instance=ExtResource("2_aiwxb")]
 collision_mask = 1
+script = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/killzone" unique_id=840190150]
 position = Vector2(0, 4.5)
