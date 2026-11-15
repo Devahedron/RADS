@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://b8h6r8cru7f57"]
 
+[ext_resource type="Script" uid="uid://ch1jrxyraj275" path="res://Scripts/slime.gd" id="1_4lf4t"]
 [ext_resource type="Texture2D" uid="uid://bxqqhxlt3nnrj" path="res://Assets/brackeys_platformer_assets/sprites/slime_green.png" id="1_swwnm"]
 [ext_resource type="PackedScene" uid="uid://du6o5c5f71dto" path="res://Scenes/killzone.tscn" id="2_aiwxb"]
 
@@ -39,10 +40,31 @@ animations = [{
 "speed": 7.0
 }]
 
+[sub_resource type="GDScript" id="GDScript_37l80"]
+script/source = "extends Area2D
+
+@onready var timer: Timer = $Timer
+
+func _on_body_entered(body):
+	if body.name == \"Player\":
+		print(\"You Died\")
+		Engine.time_scale = 0.5
+		body.get_node(\"CollisionShape2D\")
+		timer.start()
+	
+
+
+
+func _on_timer_timeout() -> void:
+	Engine.time_scale = 1
+	get_tree().reload_current_scene()
+"
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vfnvt"]
 size = Vector2(10, 15)
 
 [node name="Slime" type="Node2D" unique_id=1035213484]
+script = ExtResource("1_4lf4t")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=309697988]
 position = Vector2(0, -2)
@@ -52,9 +74,19 @@ frame = 2
 frame_progress = 0.70853645
 
 [node name="killzone" parent="AnimatedSprite2D" unique_id=607056403 instance=ExtResource("2_aiwxb")]
-collision_mask = 1
-script = null
+collision_layer = 4
+collision_mask = 11
+script = SubResource("GDScript_37l80")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/killzone" unique_id=840190150]
 position = Vector2(0, 4.5)
 shape = SubResource("RectangleShape2D_vfnvt")
+
+[node name="RayCastRight" type="RayCast2D" parent="." unique_id=1267717534]
+target_position = Vector2(9, 0)
+collision_mask = 13
+
+[node name="RayCastLeft" type="RayCast2D" parent="." unique_id=295662689]
+target_position = Vector2(-10, 0)
+collision_mask = 9
+collide_with_areas = true

@@ -64,12 +64,14 @@ frame = 6
 frame_progress = 1.0
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1056609354 groups=["JumpPad"]]
+collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=362886980]
 position = Vector2(0, 1.5)
 shape = SubResource("RectangleShape2D_dsral")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=459862845]
+collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1968618162]
 position = Vector2(0, -4)
