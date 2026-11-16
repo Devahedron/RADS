@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://bm64imv3oy0xx"]
+
+[ext_resource type="FontFile" uid="uid://dpitt42s7ro2t" path="res://Assets/Fonts/bitbybit_ [Font].ttf" id="1_k1gaj"]
+[ext_resource type="Script" uid="uid://d0yhvhsmf067c" path="res://Scripts/playbutton.gd" id="2_hejgs"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_vfnvt"]
+font = ExtResource("1_k1gaj")
+font_size = 104
+
+[node name="Control" type="Control" unique_id=1665610280]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1614304654]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 647.0
+color = Color(1, 0, 0.24705882, 1)
+
+[node name="Label" type="Label" parent="ColorRect" unique_id=1189153698]
+layout_mode = 0
+offset_left = 189.0
+offset_top = 122.0
+offset_right = 989.0
+offset_bottom = 349.0
+text = "You Died"
+label_settings = SubResource("LabelSettings_vfnvt")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1423775584]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="." unique_id=534878817]
+layout_mode = 0
+offset_left = 414.0
+offset_top = 424.0
+offset_right = 684.0
+offset_bottom = 509.0
+theme_override_font_sizes/font_size = 32
+text = "Play Again?"
+script = ExtResource("2_hejgs")

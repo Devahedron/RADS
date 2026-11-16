@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://cyocpoex6sf6k"]
+
+[ext_resource type="FontFile" uid="uid://dpitt42s7ro2t" path="res://Assets/Fonts/bitbybit_ [Font].ttf" id="1_cayip"]
+[ext_resource type="Texture2D" uid="uid://c3cbmu76locad" path="res://Assets/Used Assets/cover.png" id="2_158mb"]
+[ext_resource type="Script" uid="uid://d0yhvhsmf067c" path="res://Scripts/playbutton.gd" id="3_wwsa2"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_jsrd8"]
+font = ExtResource("1_cayip")
+font_size = 104
+
+[node name="menu" type="Control" unique_id=1155956515]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=854415755]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 647.0
+color = Color(3.85046e-06, 0.6407498, 0.4130211, 1)
+
+[node name="Label" type="Label" parent="ColorRect" unique_id=511510036]
+layout_mode = 0
+offset_left = 167.0
+offset_top = 123.0
+offset_right = 967.0
+offset_bottom = 350.0
+text = "You Died"
+label_settings = SubResource("LabelSettings_jsrd8")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=851327109]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_158mb")
+
+[node name="Button" type="Button" parent="." unique_id=2071436911]
+layout_mode = 0
+offset_left = 430.0
+offset_top = 522.0
+offset_right = 700.0
+offset_bottom = 607.0
+theme_override_font_sizes/font_size = 32
+text = "Start Playing"
+script = ExtResource("3_wwsa2")

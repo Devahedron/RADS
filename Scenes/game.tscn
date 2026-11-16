@@ -934,7 +934,7 @@ tile_map_data = PackedByteArray("AAACAOz/AAAWAAEAAAACAOv/AAAWAAAAAAACAOb/AAAWAAA
 tile_set = SubResource("TileSet_7rhtk")
 
 [node name="Player" parent="." unique_id=1134748994 instance=ExtResource("1_ebmjs")]
-position = Vector2(2147, -476)
+position = Vector2(-10, -293)
 collision_layer = 2
 collision_mask = 5
 
@@ -993,8 +993,38 @@ collision_mask = 3
 position = Vector2(24, -46)
 shape = SubResource("WorldBoundaryShape2D_vfnvt")
 
+[node name="Slime3" parent="." unique_id=1035213484 instance=ExtResource("12_rku1e")]
+position = Vector2(1842, -390)
+
 [node name="Slime2" parent="." unique_id=740225850 instance=ExtResource("12_rku1e")]
 position = Vector2(2261, -534)
+
+[node name="Enemy Only Wall4" type="StaticBody2D" parent="." unique_id=95949802]
+position = Vector2(1889, -390)
+collision_layer = 8
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy Only Wall4" unique_id=1186501375]
+position = Vector2(-14, -13)
+shape = SubResource("RectangleShape2D_vfnvt")
+
+[node name="Enemy Only Wall3" type="StaticBody2D" parent="." unique_id=619140538]
+position = Vector2(1835, -389)
+collision_layer = 8
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy Only Wall3" unique_id=232487192]
+position = Vector2(-14, -13)
+shape = SubResource("RectangleShape2D_vfnvt")
+
+[node name="Enemy Only Wall2" type="StaticBody2D" parent="." unique_id=1121085158]
+position = Vector2(164, -295)
+collision_layer = 8
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy Only Wall2" unique_id=1082983826]
+position = Vector2(-14, -13)
+shape = SubResource("RectangleShape2D_vfnvt")
 
 [node name="Enemy Only Wall" type="StaticBody2D" parent="." unique_id=1272333723]
 position = Vector2(2217, -536)
@@ -1074,7 +1104,7 @@ position = Vector2(913, -404)
 [node name="Radiation25" parent="." unique_id=828243453 instance=ExtResource("11_rku1e")]
 position = Vector2(929, -404)
 
-[node name="Slime" parent="." unique_id=1035213484 instance=ExtResource("12_rku1e")]
+[node name="Slime" parent="." unique_id=1562376921 instance=ExtResource("12_rku1e")]
 position = Vector2(49, -295)
 
 [node name="Spike" parent="." unique_id=1024288190 instance=ExtResource("13_rfjv2")]
@@ -1131,3 +1161,12 @@ position = Vector2(2113, -371)
 
 [node name="Spike19" parent="." unique_id=1578915512 instance=ExtResource("13_rfjv2")]
 position = Vector2(2161, -467)
+
+[node name="Enemy Only Wall5" type="StaticBody2D" parent="." unique_id=76005953]
+position = Vector2(28, -295)
+collision_layer = 8
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy Only Wall5" unique_id=663552046]
+position = Vector2(-14, -13)
+shape = SubResource("RectangleShape2D_vfnvt")

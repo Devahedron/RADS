@@ -15,7 +15,7 @@ general/updates_per_second=100
 [application]
 
 config/name="RADS"
-run/main_scene="uid://cxidmcuaoy67d"
+run/main_scene="uid://cyocpoex6sf6k"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
