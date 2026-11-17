@@ -13,6 +13,8 @@
 [ext_resource type="PackedScene" uid="uid://buxky8kkdbeaj" path="res://Scenes/enemies/mediumRad.tscn" id="11_rku1e"]
 [ext_resource type="PackedScene" uid="uid://b8h6r8cru7f57" path="res://Scenes/enemies/slime.tscn" id="12_rku1e"]
 [ext_resource type="PackedScene" uid="uid://e1xjdwt8jg3e" path="res://Scenes/enemies/spike.tscn" id="13_rfjv2"]
+[ext_resource type="AudioStream" uid="uid://cgqf3xra8j7co" path="res://Assets/Used Assets/audio/CriticalTheme.wav" id="14_nb51f"]
+[ext_resource type="Script" uid="uid://cfa2plainp54m" path="res://Scenes/music.gd" id="15_nnt18"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h4fw4"]
 texture = ExtResource("2_v158k")
@@ -1170,3 +1172,8 @@ collision_mask = 4
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy Only Wall5" unique_id=663552046]
 position = Vector2(-14, -13)
 shape = SubResource("RectangleShape2D_vfnvt")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=165631145]
+stream = ExtResource("14_nb51f")
+volume_db = -0.619
+script = ExtResource("15_nnt18")
