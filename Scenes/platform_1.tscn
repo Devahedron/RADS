@@ -1,17 +1,19 @@
 [gd_scene format=3 uid="uid://gtcnp8ydcmg"]
 
-[ext_resource type="Texture2D" uid="uid://c8putpnwklmph" path="res://Assets/Used Assets/tile_long.png" id="1_l24li"]
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vfnvt"]
-size = Vector2(72, 12)
+size = Vector2(47, 10)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_x2gal"]
+load_path = "res://.godot/imported/platforms.png-b1f271ca2041f053e092aba947c3d83c.ctex"
 
 [node name="platform1" type="AnimatableBody2D" unique_id=45745479]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1798633090]
+position = Vector2(0.5, -2)
 shape = SubResource("RectangleShape2D_vfnvt")
 one_way_collision = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1705459562]
-texture = ExtResource("1_l24li")
+texture = SubResource("CompressedTexture2D_x2gal")
 region_enabled = true
-region_rect = Rect2(0, 0, 72, 12)
+region_rect = Rect2(48, 0, 47, 15)
