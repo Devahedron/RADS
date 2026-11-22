@@ -1,17 +1,13 @@
 [gd_scene format=3 uid="uid://e1xjdwt8jg3e"]
 
-[ext_resource type="Texture2D" uid="uid://chdla5ce420il" path="res://Assets/Sprites-Tilemaps/factory_ [version 1.0]/factory_ [version 1.0]/factory_.png" id="1_ss5mn"]
+[ext_resource type="Texture2D" uid="uid://ccb38lcq2qfl4" path="res://Assets/Used Assets/sci-fi platformer - premium/traps/spikes.png" id="1_43gcu"]
 [ext_resource type="PackedScene" uid="uid://du6o5c5f71dto" path="res://Scenes/killzone.tscn" id="2_usad6"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_afpow"]
-atlas = ExtResource("1_ss5mn")
-region = Rect2(112, 48, 16, 16)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_meums"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_cwurv"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_afpow")
+"texture": ExtResource("1_43gcu")
 }],
 "loop": 1,
 "name": &"default",
@@ -19,15 +15,17 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dsral"]
-size = Vector2(14, 5)
+size = Vector2(48, 4)
 
 [node name="Spike" type="Node2D" unique_id=2038571557]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=217524847]
-sprite_frames = SubResource("SpriteFrames_meums")
+position = Vector2(17, 4)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_cwurv")
 
 [node name="killzone" parent="." unique_id=607056403 instance=ExtResource("2_usad6")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone" unique_id=1397192480]
-position = Vector2(0, 5.5)
+position = Vector2(17, 6)
 shape = SubResource("RectangleShape2D_dsral")
