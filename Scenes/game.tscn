@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://cxidmcuaoy67d"]
 
 [ext_resource type="PackedScene" uid="uid://d11bsso28sirw" path="res://Scenes/player.tscn" id="1_ebmjs"]
+[ext_resource type="Script" uid="uid://draq8j3n7p6qj" path="res://Scripts/game_manager.gd" id="1_vm72l"]
 [ext_resource type="Texture2D" uid="uid://brldhrs4oq2f6" path="res://Assets/brackeys_platformer_assets/sprites/world_tileset.png" id="2_qxrlw"]
 [ext_resource type="Texture2D" uid="uid://e0nb7d7ytbhc" path="res://Assets/Used Assets/industrial.v2.png" id="2_v158k"]
 [ext_resource type="Texture2D" uid="uid://cr7csbpc34jfi" path="res://Assets/Used Assets/Tileset_Spritesheet.png" id="3_wrm1d"]
@@ -22,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://bhcg1c5kcrlpu" path="res://Scenes/portal.tscn" id="21_exi56"]
 [ext_resource type="PackedScene" uid="uid://dkb2gipgfaa35" path="res://Scenes/invisible_wall.tscn" id="22_7t8sx"]
 [ext_resource type="PackedScene" uid="uid://ctcili88wesxd" path="res://Scenes/enemies/smallspike.tscn" id="23_mg4q0"]
+[ext_resource type="PackedScene" uid="uid://ddbo4hr6vui3e" path="res://Scenes/medkit.tscn" id="23_vm72l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h4fw4"]
 texture = ExtResource("2_v158k")
@@ -1291,6 +1293,10 @@ size = Vector2(4, 48)
 [node name="Game" type="Node2D" unique_id=436735830]
 position = Vector2(5, 4)
 
+[node name="GameManager" type="Node" parent="." unique_id=1746622890]
+unique_name_in_owner = true
+script = ExtResource("1_vm72l")
+
 [node name="Backgrounds" type="StaticBody2D" parent="." unique_id=1509720185]
 
 [node name="Background" type="TileMapLayer" parent="Backgrounds" unique_id=1948475381]
@@ -1470,6 +1476,29 @@ position = Vector2(119.3798, 404.1837)
 [node name="Invisible Wall" parent="." unique_id=1909817790 instance=ExtResource("22_7t8sx")]
 position = Vector2(2214, -305)
 
+[node name="Medkit" parent="." unique_id=334067787 instance=ExtResource("23_vm72l")]
+position = Vector2(208, -596)
+
+[node name="Medkit2" parent="." unique_id=123233025 instance=ExtResource("23_vm72l")]
+position = Vector2(306, -595)
+
+[node name="Medkit3" parent="." unique_id=1461987313 instance=ExtResource("23_vm72l")]
+position = Vector2(746, -803)
+
+[node name="Medkit4" parent="." unique_id=914524762 instance=ExtResource("23_vm72l")]
+position = Vector2(529, -792)
+
+[node name="Medkit5" parent="." unique_id=1687269984 instance=ExtResource("23_vm72l")]
+position = Vector2(619, -791)
+
+[node name="StaticBody2D" parent="." unique_id=445866954 instance=ExtResource("22_7t8sx")]
+position = Vector2(2149, -713)
+scale = Vector2(3, 3)
+
+[node name="CollisionShape2D" parent="StaticBody2D" index="0" unique_id=1139057417]
+position = Vector2(1, -3)
+
 [editable path="Player"]
 [editable path="portal"]
 [editable path="portal2"]
+[editable path="StaticBody2D"]

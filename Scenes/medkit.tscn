@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://ddbo4hr6vui3e"]
+
+[ext_resource type="Script" uid="uid://kmi010ood05r" path="res://Scripts/medkit.gd" id="1_qwt6g"]
+[ext_resource type="Texture2D" uid="uid://btc2o4hf0udwt" path="res://Assets/Used Assets/pixor-library-sci-medkit-clean-32px-8-sides.png" id="1_v3hca"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qwt6g"]
+atlas = ExtResource("1_v3hca")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f44r3"]
+atlas = ExtResource("1_v3hca")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cfrhn"]
+atlas = ExtResource("1_v3hca")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gj7g0"]
+atlas = ExtResource("1_v3hca")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8j442"]
+atlas = ExtResource("1_v3hca")
+region = Rect2(128, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_axq1d"]
+atlas = ExtResource("1_v3hca")
+region = Rect2(160, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ixtbs"]
+atlas = ExtResource("1_v3hca")
+region = Rect2(192, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0s0d4"]
+atlas = ExtResource("1_v3hca")
+region = Rect2(224, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vfnvt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qwt6g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f44r3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cfrhn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gj7g0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8j442")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_axq1d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ixtbs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0s0d4")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vfnvt"]
+size = Vector2(20.029629, 14.140859)
+
+[node name="Medkit" type="Area2D" unique_id=334067787]
+scale = Vector2(0.5, 0.5)
+collision_mask = 2
+script = ExtResource("1_qwt6g")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=227601884]
+sprite_frames = SubResource("SpriteFrames_vfnvt")
+autoplay = "default"
+frame_progress = 0.99306947
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=603278344]
+position = Vector2(0.647524, -0.637921)
+rotation = -0.7988365
+shape = SubResource("RectangleShape2D_vfnvt")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
