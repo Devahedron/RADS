@@ -1455,9 +1455,18 @@ position = Vector2(965, -692)
 position = Vector2(1036, -740)
 
 [node name="portal" parent="." unique_id=666908363 instance=ExtResource("21_exi56")]
-position = Vector2(2129, -700)
+position = Vector2(2129, -698)
 
 [node name="DestinationPoint" parent="portal" index="2" unique_id=780764020]
 position = Vector2(121, 407)
 
+[node name="portal2" parent="." unique_id=987136985 instance=ExtResource("21_exi56")]
+position = Vector2(2227, -298)
+rotation = 3.140058
+
+[node name="DestinationPoint" parent="portal2" index="2" unique_id=780764020]
+position = Vector2(119.3798, 404.1837)
+
+[editable path="Player"]
 [editable path="portal"]
+[editable path="portal2"]
