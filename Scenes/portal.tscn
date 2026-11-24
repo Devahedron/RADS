@@ -62,7 +62,7 @@ script = ExtResource("1_oi2tk")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=579359923]
 sprite_frames = SubResource("SpriteFrames_vfnvt")
 autoplay = "default"
-frame_progress = 0.45499367
+frame_progress = 0.5212946
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=151107857]
 position = Vector2(1.5, 1)
@@ -70,9 +70,5 @@ shape = SubResource("RectangleShape2D_vfnvt")
 
 [node name="DestinationPoint" type="Marker2D" parent="." unique_id=780764020]
 position = Vector2(-18, -5)
-
-[node name="Timer" type="Timer" parent="." unique_id=943732883]
-wait_time = 0.6
-one_shot = true
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
