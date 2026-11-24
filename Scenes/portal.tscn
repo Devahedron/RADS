@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://bhcg1c5kcrlpu"]
+
+[ext_resource type="Texture2D" uid="uid://c6cawtxk436v0" path="res://Assets/Used Assets/Dimensional_Portal.png" id="1_j20fm"]
+[ext_resource type="Script" uid="uid://cjltgul5pfiib" path="res://Scripts/portal.gd" id="1_oi2tk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oi2tk"]
+atlas = ExtResource("1_j20fm")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dashy"]
+atlas = ExtResource("1_j20fm")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uwyjv"]
+atlas = ExtResource("1_j20fm")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cqy4h"]
+atlas = ExtResource("1_j20fm")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8lpw3"]
+atlas = ExtResource("1_j20fm")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vcl8t"]
+atlas = ExtResource("1_j20fm")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vfnvt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oi2tk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dashy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uwyjv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cqy4h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8lpw3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vcl8t")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vfnvt"]
+size = Vector2(7, 28)
+
+[node name="portal" type="Area2D" unique_id=666908363]
+script = ExtResource("1_oi2tk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=579359923]
+sprite_frames = SubResource("SpriteFrames_vfnvt")
+autoplay = "default"
+frame_progress = 0.45499367
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=151107857]
+position = Vector2(1.5, 1)
+shape = SubResource("RectangleShape2D_vfnvt")
+
+[node name="DestinationPoint" type="Marker2D" parent="." unique_id=780764020]
+position = Vector2(-18, -5)
+
+[node name="Timer" type="Timer" parent="." unique_id=943732883]
+wait_time = 0.6
+one_shot = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

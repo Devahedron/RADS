@@ -414,7 +414,7 @@ autoplay = "New idle"
 position = Vector2(0, 2)
 shape = SubResource("CircleShape2D_vfnvt")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=269578923]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=269578923 groups=["Player"]]
 position = Vector2(-3, 6)
 zoom = Vector2(4.5, 4.5)
 limit_bottom = 470
