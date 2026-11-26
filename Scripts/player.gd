@@ -6,6 +6,11 @@ const jump_pad_height: float = -535.0
 const health: int = 100
 const radiation_damage: int = 10
 
+@onready var health_bar = $Healthbar
+
+func _ready():
+	health_bar.init_health(health)
+
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -36,3 +41,8 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+
+func _on_timer_timeout() -> void:
+	if health_bar.value > 0:
+		health_bar.value -= 10

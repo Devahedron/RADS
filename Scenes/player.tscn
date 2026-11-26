@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bonr7m705svhr" path="res://Scripts/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://dkqeyqwoslaps" path="res://Assets/brackeys_platformer_assets/sprites/knight.png" id="1_v0iea"]
 [ext_resource type="Texture2D" uid="uid://bfgath2bs2eya" path="res://Assets/Used Assets/sci-fi platformer - free/player.png" id="2_6t5aa"]
+[ext_resource type="PackedScene" uid="uid://vf1mru7wsguf" path="res://Scenes/healthbar.tscn" id="4_vgqql"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ax3m3"]
 atlas = ExtResource("2_6t5aa")
@@ -415,9 +416,20 @@ autoplay = "New idle"
 position = Vector2(0, 2)
 shape = SubResource("CircleShape2D_vfnvt")
 
+[node name="Healthbar" parent="." unique_id=1171825929 instance=ExtResource("4_vgqql")]
+offset_left = -15.0
+offset_top = -13.0
+offset_right = 13.0
+offset_bottom = -11.0
+
 [node name="Camera2D" type="Camera2D" parent="." unique_id=269578923 groups=["Player"]]
 position = Vector2(-3, 6)
 zoom = Vector2(4.5, 4.5)
 limit_bottom = 470
 limit_smoothed = true
 position_smoothing_enabled = true
+
+[node name="Timer" type="Timer" parent="." unique_id=1948043743]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
