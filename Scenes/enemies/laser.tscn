@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://jrhbljnjsym7"]
+
+[ext_resource type="Texture2D" uid="uid://v46spcortxb7" path="res://Assets/Used Assets/sci-fi platformer - premium/traps/lasers.png" id="1_e2t7n"]
+[ext_resource type="PackedScene" uid="uid://du6o5c5f71dto" path="res://Scenes/killzone.tscn" id="2_a04sm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a04sm"]
+atlas = ExtResource("1_e2t7n")
+region = Rect2(0, 0, 16, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0bgsy"]
+atlas = ExtResource("1_e2t7n")
+region = Rect2(16, 0, 16, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xyiwb"]
+atlas = ExtResource("1_e2t7n")
+region = Rect2(32, 0, 16, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_do2lv"]
+atlas = ExtResource("1_e2t7n")
+region = Rect2(48, 0, 16, 56)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vfnvt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a04sm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0bgsy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xyiwb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_do2lv")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 13.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vfnvt"]
+size = Vector2(5, 41)
+
+[node name="laser" type="Node2D" unique_id=858892648]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1460789234]
+sprite_frames = SubResource("SpriteFrames_vfnvt")
+autoplay = "default"
+frame_progress = 0.22393031
+
+[node name="killzone" parent="AnimatedSprite2D" unique_id=607056403 instance=ExtResource("2_a04sm")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/killzone" unique_id=576218514]
+position = Vector2(0.5, -4.5)
+shape = SubResource("RectangleShape2D_vfnvt")
