@@ -1393,7 +1393,7 @@ tile_map_data = PackedByteArray("AAACAOz/AAAWAAEAAAACAOv/AAAWAAAAAAACAOb/AAAWAAA
 tile_set = SubResource("TileSet_7rhtk")
 
 [node name="Player" parent="." unique_id=1134748994 instance=ExtResource("1_ebmjs")]
-position = Vector2(1086, -839)
+position = Vector2(-165, -598)
 collision_mask = 5
 
 [node name="platform1" parent="." unique_id=45745479 instance=ExtResource("5_wowpa")]
@@ -1564,7 +1564,7 @@ position = Vector2(306, -595)
 position = Vector2(746, -803)
 
 [node name="Medkit4" parent="." unique_id=914524762 instance=ExtResource("23_vm72l")]
-position = Vector2(529, -792)
+position = Vector2(1363, -773)
 
 [node name="Medkit5" parent="." unique_id=1687269984 instance=ExtResource("23_vm72l")]
 position = Vector2(619, -791)
@@ -1627,6 +1627,9 @@ physics_interpolation_mode = 1
 callback_mode_process = 0
 libraries/ = SubResource("AnimationLibrary_ese38")
 autoplay = &"move-Y"
+
+[node name="Medkit6" parent="." unique_id=925411203 instance=ExtResource("23_vm72l")]
+position = Vector2(2310, -296)
 
 [editable path="Player"]
 [editable path="portal"]

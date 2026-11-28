@@ -7,9 +7,17 @@ const health: int = 100
 const radiation_damage: int = 10
 
 @onready var health_bar = $Healthbar
+@onready var game_manager = %GameManager
+
+signal health_changed(value: float)
+
 
 func _ready():
 	health_bar.init_health(health)
+	if game_manager:
+		game_manager.on_medkit_collected.connect(_handle_healing)
+	else:
+		print("game manager is null")
 
 
 func _physics_process(delta: float) -> void:
@@ -43,6 +51,17 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 
+
 func _on_timer_timeout() -> void:
 	if health_bar.value > 0:
-		health_bar.value -= 10
+		health_bar.value -= 5
+		health_changed.emit(health_bar.value)
+	else:
+		get_tree().change_scene_to_file("res://Scenes/youdied.tscn")
+
+
+func _handle_healing(health_amount: float) -> void:
+	print("you have healed!")
+	if health_bar.value > 0:
+		health_bar.value += health_amount
+		health_changed.emit(health_bar.value)
